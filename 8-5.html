@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Registration Number and Name</title>
+</head>
+<body>
+    <script>
+        let regNo = "23BCE5060";
+        let name = "Posem Reddy Susruth";
+        document.write(
+            `<div style="border: 2px solid red; padding: 10px; display: inline-block; text-align: center;">
+                ${regNo}
+            </div>`
+        );
+        document.write('<br><br>');
+        let nameDiv = document.createElement("div");
+        nameDiv.style.border = "1px solid black";
+        nameDiv.style.padding = "10px";
+        nameDiv.style.textAlign = "center";
+        nameDiv.innerHTML = `<span style="color: red; font-weight: bold;">*${name}*</span>`;
+        document.body.appendChild(nameDiv);
+    </script>
+</body>
+</html>
